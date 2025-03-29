@@ -6,10 +6,11 @@ import {
   updateWebinar,
   deleteWebinar,
 } from "../controllers/webinar.controller.js";
+import upload from "../config/multer.js";
 
 const webinarRouter = express.Router();
 
-webinarRouter.post("/add", addWebinar);
+webinarRouter.post("/add", upload.single("video"), addWebinar);
 
 webinarRouter.get("/", getWebinars);
 

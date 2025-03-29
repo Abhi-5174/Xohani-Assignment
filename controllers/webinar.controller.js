@@ -22,6 +22,10 @@ const addWebinar = async (req, res, next) => {
       userId,
     });
 
+    console.log(req.file);
+    console.log(req.files);
+    console.log(req.body);
+
     const user = await User.findOne(userId);
 
     user.webinars.push(newWebinar._id);

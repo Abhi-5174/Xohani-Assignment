@@ -31,7 +31,7 @@ const postSignup = async (req, res, next) => {
     return res.status(400).json({ message: "All fields are required!" });
   try {
     const user = await User.findOne({ email });
-    if (!user) return res.status(404).json({ message: "User already exists!" });
+    if (user) return res.status(404).json({ message: "User already exists!" });
 
     const hashedPassword = await bcrypt.hash(
       password,
