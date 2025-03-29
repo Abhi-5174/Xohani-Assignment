@@ -1,5 +1,7 @@
 # Xohani-Assignment
 
+## Deployed link [Click me 😊](https://xohani-assignment.onrender.com)
+
 ## Note
 The api are encripted with and Authorization custom middleware so you need to pass Berear token in headers.
 
