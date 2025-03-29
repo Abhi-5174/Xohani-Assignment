@@ -4,9 +4,11 @@
 The api are encripted with and Authorization custom middleware so you need to pass Berear token in headers.
 
 - required: 
+    ```json
     {
-        headers: "authorization", "Bearer dummy_auth"
+        "headers": "authorization", "Bearer dummy_auth"
     }
+    ```
 
 ## Endpoints
 
