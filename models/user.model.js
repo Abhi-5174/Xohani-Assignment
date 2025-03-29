@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
-  FullName: {
+  fullName: {
     type: String,
     required: true,
     minlength: [3, "Name should be minimum 3 characters long."],
